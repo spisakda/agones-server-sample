@@ -1,0 +1,21 @@
+apiVersion: "agones.dev/v1"
+kind: GameServer
+metadata:
+  generateName: "simple-game-server-"
+spec:
+  ports:
+  - name: default
+    portPolicy: Dynamic
+    containerPort: 7777
+  template:
+    spec:
+      containers:
+      - name: simple-game-server
+        image: asia.gcr.io/agones-test-395212/agones-sample-game@sha256:4b52e25fd50b853c2a390477ae8835f9de85a6ce1bfe0d3ac93d2779b02c60de
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "20m"
+          limits:
+            memory: "64Mi"
+            cpu: "20m"
