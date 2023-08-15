@@ -28,8 +28,8 @@ spec:
         image: asia.gcr.io/agones-test-395212/simple-server@sha256:3b4fba911c25ba83506500ab58ce7c019212b23f9d9d7177e4222a7a5cb8814a
         resources:
           requests:
-            memory: "128MB"
+            memory: "128M"
             cpu: "100m"
           limits:
-            memory: "128MB"
+            memory: "128M"
             cpu: "100m"
