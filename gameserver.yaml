@@ -25,7 +25,7 @@ spec:
     spec:
       containers:
       - name: simple-game-server
-        image: asia.gcr.io/agones-test-395212/simple-server@sha256:fb9d224dbbcbfad8d9fa8544fbeb3620c0b6f91f8680791304c3d56460e37129
+        image: asia.gcr.io/agones-test-395212/simple-server@sha256:f69843ee2b3c4a7381765bf18d7937c0fda4923ced5818ba0b6878a3597f03bd
         resources:
           requests:
             memory: "64Mi"
